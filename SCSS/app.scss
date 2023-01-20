@@ -1,0 +1,108 @@
+@import "reset";
+@import "colors";
+@import "variables";
+
+@mixin fontBase() {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: $padding-3;
+  font-weight: 400;
+  color: $color-nero;
+  &:hover {
+    color: $color-bianco;
+  }
+}
+
+body {
+  background-color: $color-grigio;
+  color: $color-bianco;
+}
+
+main {
+  margin: $margin-2 $margin-3;
+  #contenitore {
+    margin-top: $margin-3 * 2;
+    @include fontBase();
+    h1 {
+      color: $new_grey;
+      font-weight: 500;
+    }
+    p {
+      font-size: large;
+    }
+    img {
+      height: $margin-4 * 6;
+      width: 100%;
+      margin: $margin-3 $padding-4;
+    }
+  }
+
+  #sezione2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    background-#{$b-image}: url("../asset/photo_2023-01-20_10-52-17.jpg");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $color-bianco;
+    h2 {
+      width: 50%;
+      background-color: $background_grey;
+      margin-bottom: $margin-3;
+      border-radius: 10em;
+    }
+    h4 {
+      background-color: $background_grey;
+      border-radius: 10em;
+      margin-top: $margin-2;
+      padding: 0 $margin-1;
+    }
+  }
+}
+
+footer {
+  @include fontBase();
+  font-size: smaller;
+  text-align: center;
+  padding: $margin-1 0;
+  width: 100%;
+  background-color: $new_grey;
+  color: $color-bianco;
+  position: relative;
+  bottom: 0;
+}
+
+#contenitore_p2 {
+  border: 5px solid $new_grey;
+  border-radius: 2em;
+  margin-top: $margin-3 * 2;
+  @include fontBase();
+  text-align: center;
+  img {
+    border-radius: 3em;
+    margin-top: $margin-2;
+  }
+  h2 {
+    border: 5px solid $new_grey;
+    border-radius: 1em;
+    padding: $padding-4 * 4 0;
+    width: 15em;
+    position: relative;
+    top: 70px;
+    z-index: 500;
+    background-color: $color-grigio;
+  }
+  .sezioni {
+    border: 2px solid $new_grey;
+    border-radius: 2em;
+    margin: $margin-1 auto;
+    width: 90%;
+    #title {
+      margin-top: $margin-2;
+    }
+  }
+}

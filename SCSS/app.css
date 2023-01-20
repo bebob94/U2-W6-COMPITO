@@ -1,0 +1,122 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: gray;
+  color: white;
+}
+
+main {
+  margin: 2em 3em;
+}
+main #contenitore {
+  margin-top: 6em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+}
+main #contenitore:hover {
+  color: white;
+}
+main #contenitore h1 {
+  color: rgb(94, 87, 87);
+  font-weight: 500;
+}
+main #contenitore p {
+  font-size: large;
+}
+main #contenitore img {
+  height: 24em;
+  width: 100%;
+  margin: 3em 5px;
+}
+main #sezione2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  background-image: url("../asset/photo_2023-01-20_10-52-17.jpg");
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+main #sezione2 h2 {
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.856);
+  margin-bottom: 3em;
+  border-radius: 10em;
+}
+main #sezione2 h4 {
+  background-color: rgba(128, 128, 128, 0.856);
+  border-radius: 10em;
+  margin-top: 2em;
+  padding: 0 1em;
+}
+
+footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+  font-size: smaller;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  background-color: rgb(94, 87, 87);
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+footer:hover {
+  color: white;
+}
+
+#contenitore_p2 {
+  border: 5px solid rgb(94, 87, 87);
+  border-radius: 2em;
+  margin-top: 6em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+#contenitore_p2:hover {
+  color: white;
+}
+#contenitore_p2 img {
+  border-radius: 3em;
+  margin-top: 2em;
+}
+#contenitore_p2 h2 {
+  border: 5px solid rgb(94, 87, 87);
+  border-radius: 1em;
+  padding: 20px 0;
+  width: 15em;
+  position: relative;
+  top: 70px;
+  z-index: 500;
+  background-color: gray;
+}
+#contenitore_p2 .sezioni {
+  border: 2px solid rgb(94, 87, 87);
+  border-radius: 2em;
+  margin: 1em auto;
+  width: 90%;
+}
+#contenitore_p2 .sezioni #title {
+  margin-top: 2em;
+}/*# sourceMappingURL=app.css.map */
