@@ -119,4 +119,35 @@ footer:hover {
 }
 #contenitore_p2 .sezioni #title {
   margin-top: 2em;
+}
+
+#contenitore_p3 {
+  margin-top: 9em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+  font-size: 1em;
+}
+#contenitore_p3:hover {
+  color: white;
+}
+#contenitore_p3 #prodotto {
+  height: 15em;
+  float: left;
+  margin: 1em 2em 5px 0;
+  border-radius: 1em;
+}
+#contenitore_p3 #contenitore_prodotti {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+#contenitore_p3 #contenitore_prodotti img {
+  height: 20em;
+  margin: 1em 0;
+  border-radius: 3em;
+  box-shadow: 4px 4px 10px 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */

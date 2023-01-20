@@ -106,3 +106,27 @@ footer {
     }
   }
 }
+
+#contenitore_p3 {
+  margin-top: $margin-3 * 3;
+  @include fontBase();
+  font-size: 1em;
+  #prodotto {
+    height: 15em;
+    float: left;
+    margin: $margin-1 $margin-2 $padding-4 0;
+    border-radius: 1em;
+  }
+  #contenitore_prodotti {
+    margin-top: $margin-1;
+    display: flex;
+    justify-content: space-between;
+    img {
+      height: 20em;
+      margin: $margin-1 0;
+      border-radius: 3em;
+      box-shadow: $b-shadow;
+      cursor: pointer;
+    }
+  }
+}
