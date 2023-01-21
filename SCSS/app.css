@@ -23,9 +23,6 @@ main #contenitore {
   font-weight: 400;
   color: black;
 }
-main #contenitore:hover {
-  color: white;
-}
 main #contenitore h1 {
   color: rgb(94, 87, 87);
   font-weight: 500;
@@ -48,6 +45,8 @@ main #sezione2 {
   background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 2em;
+  box-shadow: 4px 4px 20px 10px black;
   text-align: center;
   color: white;
 }
@@ -79,9 +78,6 @@ footer {
   position: relative;
   bottom: 0;
 }
-footer:hover {
-  color: white;
-}
 
 #contenitore_p2 {
   border: 5px solid rgb(94, 87, 87);
@@ -94,9 +90,6 @@ footer:hover {
   color: black;
   text-align: center;
 }
-#contenitore_p2:hover {
-  color: white;
-}
 #contenitore_p2 img {
   border-radius: 3em;
   margin-top: 2em;
@@ -108,7 +101,7 @@ footer:hover {
   width: 15em;
   position: relative;
   top: 70px;
-  z-index: 500;
+  z-index: 0;
   background-color: gray;
 }
 #contenitore_p2 .sezioni {
@@ -130,14 +123,15 @@ footer:hover {
   color: black;
   font-size: 1em;
 }
-#contenitore_p3:hover {
-  color: white;
-}
 #contenitore_p3 #prodotto {
-  height: 15em;
-  float: left;
-  margin: 1em 2em 5px 0;
+  height: 13em;
+  float: right;
+  margin: 0 2em 5px 0;
   border-radius: 1em;
+}
+#contenitore_p3 h2 {
+  margin-bottom: 1em;
+  color: rgb(94, 87, 87);
 }
 #contenitore_p3 #contenitore_prodotti {
   margin-top: 1em;
@@ -148,6 +142,63 @@ footer:hover {
   height: 20em;
   margin: 1em 0;
   border-radius: 3em;
-  box-shadow: 4px 4px 10px 5px;
+  box-shadow: 4px 4px 20px 10px black;
   cursor: pointer;
+  width: 300px;
+}
+
+#contenitore_p4 {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  background-image: url("../asset/photo_2023-01-20_10-52-17.jpg");
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+  box-shadow: 4px 4px 20px 10px black;
+  text-align: center;
+  background-position-y: center;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 3em;
+}
+#contenitore_p4 h2 {
+  background-color: rgba(128, 128, 128, 0.856);
+  margin-bottom: 3em;
+  border-radius: 10em;
+  padding: 5px 1em;
+}
+
+.orari {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+  -spacing: 1em;
+}
+
+button {
+  border-radius: 2em;
+  padding: 5px 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: black;
+  background-color: rgba(92, 13, 13, 0.904);
+  color: rgb(94, 87, 87);
+}
+button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px 10px black;
+  color: black;
 }/*# sourceMappingURL=app.css.map */

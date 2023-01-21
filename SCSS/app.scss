@@ -8,9 +8,16 @@
   letter-spacing: $padding-3;
   font-weight: 400;
   color: $color-nero;
-  &:hover {
-    color: $color-bianco;
-  }
+}
+
+@mixin background-image() {
+  background-#{$b-image}: url("../asset/photo_2023-01-20_10-52-17.jpg");
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+  box-shadow: $b-shadow;
+  text-align: center;
 }
 
 body {
@@ -43,12 +50,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 20em;
-    background-#{$b-image}: url("../asset/photo_2023-01-20_10-52-17.jpg");
-    background-size: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-
+    @include background-image();
     color: $color-bianco;
     h2 {
       width: 50%;
@@ -113,10 +115,14 @@ footer {
   @include fontBase();
   font-size: 1em;
   #prodotto {
-    height: 15em;
-    float: left;
-    margin: $margin-1 $margin-2 $padding-4 0;
+    height: 13em;
+    float: right;
+    margin: 0 $margin-2 $padding-4 0;
     border-radius: 1em;
+  }
+  h2 {
+    margin-bottom: $margin-1;
+    color: $new_grey;
   }
 
   #contenitore_prodotti {
@@ -129,6 +135,45 @@ footer {
       border-radius: 3em;
       box-shadow: $b-shadow;
       cursor: pointer;
+      width: 300px;
     }
+  }
+}
+
+#contenitore_p4 {
+  margin-top: $margin-3 * 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  @include background-image();
+  background-position-y: center;
+  color: $color-bianco;
+  @include fontBase();
+  margin-bottom: $margin-3;
+  h2 {
+    background-color: $background_grey;
+    margin-bottom: $margin-3;
+    border-radius: 10em;
+    padding: $padding-4 $margin-1;
+  }
+}
+
+.orari {
+  @include fontBase();
+  -spacing: $margin-1;
+}
+
+button {
+  border-radius: 2em;
+  padding: $padding-4 $padding-4 * 6;
+  @include fontBase();
+  background-color: rgba(92, 13, 13, 0.904);
+  color: $new_grey;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 10px black;
+    color: black;
   }
 }
