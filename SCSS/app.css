@@ -187,7 +187,7 @@ footer {
   -spacing: 1em;
 }
 
-button {
+.prenotazione {
   border-radius: 2em;
   padding: 5px 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -198,7 +198,7 @@ button {
   background-color: rgba(92, 13, 13, 0.904);
   color: rgb(94, 87, 87);
 }
-button:hover {
+.prenotazione:hover {
   transform: scale(1.2);
   box-shadow: 0 0 20px 10px black;
   color: black;
