@@ -77,33 +77,25 @@
 
     <main>
       <div id="contenitore">
-        <div class="row mb-5">
+        <div class="mb-5">
           <h1>BARBERIA FOLLESA</h1>
-          <div class="col col-4">
-            <p>
-              Barberia Follesa è la grooming lounge dedicata all'uomo moderno
-              come te, che ama curare il proprio aspetto e che non taglia barba
-              e capelli solo perchè deve farlo. Barberia Italiana ha portato a
-              Villaputzu la tradizione del taglio pettine e forbice dei capelli
-              e della barba, 100% Made in Italy. Oltre a prenderci cura dei tuoi
-              capelli e della tua barba con le più antiche tecniche ed i
-              migliori barbieri professionisti di oggi, puoi goderti un momento
-              di relax staccando dalle abitudini della vita quotidiana. Sarai
-              accolto dal sorriso dei nostri barbieri e da un buon espresso
-              italiano, potrai accomodarti su poltrone storiche made in Italy e
-              goderti il servizio di taglio capelli, barba e i complementi
-              benessere per la cura della tua pelle mentre nell'aria suona una
-              musica trap rilassante e le fragranze del barbiere di una volta
-              riempiono l'ambiente.
-            </p>
-          </div>
-          <div class="col col-8">
-            <img
-              class=""
-              src="./asset/photo_2023-01-20_16-50-43.jpg"
-              alt="Matteo"
-            />
-          </div>
+          <img src="./asset/photo_2023-01-20_16-50-43.jpg" alt="Matteo" />
+
+          <p>
+            Barberia Follesa è la grooming lounge dedicata all'uomo moderno come
+            te, che ama curare il proprio aspetto e che non taglia barba e
+            capelli solo perchè deve farlo. Barberia Italiana ha portato a
+            Villaputzu la tradizione del taglio pettine e forbice dei capelli e
+            della barba, 100% Made in Italy. Oltre a prenderci cura dei tuoi
+            capelli e della tua barba con le più antiche tecniche ed i migliori
+            barbieri professionisti di oggi, puoi goderti un momento di relax
+            staccando dalle abitudini della vita quotidiana. Sarai accolto dal
+            sorriso dei nostri barbieri e da un buon espresso italiano, potrai
+            accomodarti su poltrone storiche made in Italy e goderti il servizio
+            di taglio capelli, barba e i complementi benessere per la cura della
+            tua pelle mentre nell'aria suona una musica trap rilassante e le
+            fragranze del barbiere di una volta riempiono l'ambiente.
+          </p>
         </div>
         <!-- fine prima parte centrale -->
         <div id="sezione2">
@@ -113,8 +105,23 @@
       </div>
 
       <!--inizio carousel -->
-      <div class="row my-5 justify-content-center align-items-center">
-        <div class="col col-4">
+      <p>
+        <button
+          class="mostra"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseCarousel"
+          aria-expanded="false"
+          aria-controls="collapseCarousel"
+        >
+          FOTO
+        </button>
+      </p>
+      <div
+        class="row my-5 justify-content-center align-items-center collapse collapse-horizontal"
+        id="collapseCarousel"
+      >
+        <div class="col col-10 col-md-8 col-lg-6">
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button

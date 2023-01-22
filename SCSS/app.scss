@@ -35,13 +35,15 @@ main {
       color: $new_grey;
       font-weight: 500;
     }
+    img {
+      height: $margin-4 * 3;
+      width: $margin-4 * 3;
+      float: right;
+      margin: $margin-1 $margin-2;
+      border-radius: $margin-1;
+    }
     p {
       font-size: large;
-    }
-    img {
-      height: $margin-4 * 6;
-      width: 100%;
-      margin: $margin-3 $padding-4;
     }
   }
 
@@ -53,6 +55,7 @@ main {
     height: 20em;
     @include background-image();
     color: $color-bianco;
+    margin-top: $margin-4;
     h2 {
       width: 50%;
       background-color: $background_grey;
@@ -65,6 +68,19 @@ main {
       margin-top: $margin-2;
       padding: 0 $margin-1;
     }
+  }
+}
+
+.mostra {
+  @include fontBase();
+  font-size: 15px;
+  background-color: $background_grey;
+  color: black;
+  border-radius: 1em;
+  padding: $padding-3 $padding-4 * 3;
+  margin-top: $margin-3;
+  &:hover {
+    transform: scale(1.2);
   }
 }
 
@@ -121,19 +137,31 @@ footer {
   @include fontBase();
   font-size: 1em;
   #prodotto {
-    height: 13em;
+    height: 15em;
     float: right;
-    margin: 0 $margin-2 $padding-4 0;
+    margin: $padding-3 $margin-4 $margin-1 $margin-2;
     border-radius: 1em;
+  }
+  p {
+    word-spacing: 10px;
+    letter-spacing: 5px;
   }
   h2 {
     margin-bottom: $margin-1;
     color: $new_grey;
   }
   #contenitore_prodotti {
-    margin-top: $margin-1;
+    margin-top: $margin-3;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
     img {
       height: 20em;
       margin: $margin-1 0;
